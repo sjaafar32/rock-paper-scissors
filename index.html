@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Page Title</title>
+  <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  <meta charset="UTF-8"/>
+</head>
+<body>
+    <script src="script.js" defer> </script>
+
+    <main>
+      <div id = "text">
+      <h1 style = "display: flex; justify-content: center;">Choose your weapon!</h1>
+      </div>
+
+      <button id="restart"> Restart Game</button>
+      <div class = "buttons">
+        <button id= "rock" >Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+      </div>
+
+      <div class = "scoreBoard" >
+        <div class = "boxScore">Scoreboard</div>
+          <div class = "container">
+            <playerScore id="Player-Score" class = "Player-Score">00</playerScore>
+            <comScore id="Computer-Score" class = "Computer-Score">00</comScore>
+          </div>
+          <div class = "p">
+          <p style = "margin-right: 100px;">PLAYER</p>
+          <p>COMPUTER</p>
+          </div>
+        </div>
+    </main>
+</body>
+</html>
