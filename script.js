@@ -15,18 +15,6 @@ function computerPlay() {
     else if (choice === 2){ return 'scissors';}
 }
 
-/* function playerChoice() {
-    //*****HOW TO ADD PAUSE HERE SO USER CAN MAKE SELECTION*******
-    //***TRY MAKING AN ARRAY LOOP AND PUT IT IN THE function game********
-    if (btn1.addEventListener("click", function(){
-        return "rock";
-    }));
-    // btn1.onClick = () => playerSelection = 'rock';
-    // if (btn1.onclick) { return 'rock'; }
-    // else if (btn2.onclick) { return 'paper'; }
-    // else if (btn3.onclick) { return 'scissors'; }
-}
-*/
 let computerSelection;
 let playerSelection;
 
@@ -89,8 +77,9 @@ function checkScore(){
         playerScore = 0;
         computerScore = 0;
     }
-    else if (computerScore == 5) {
+    if (computerScore == 5) {
         endGame.textContent = 'Game Over. Computer Wins!';
+        main.appendChild(endGame);
         playerScore = 0;
         computerScore = 0;
     }
