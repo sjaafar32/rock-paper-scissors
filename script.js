@@ -27,8 +27,8 @@ let playerScore = 0;
 restart.addEventListener('click', () => 
 {
     playerScore = computerScore = 0;
-    userScore.innerText = "Player Score: " + playerScore;
-    comScore.innerText = "Computer Score: " + computerScore;
+    userScore.innerText = '0' + playerScore;
+    comScore.innerText = '0' + computerScore;
     endGame.textContent = " ";
 });
 
