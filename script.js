@@ -8,6 +8,9 @@ const endGame = document.createElement('h2');
 main.classList.add('h2');
 const restart = document.getElementById('restart');
 
+const selectionsDiv = document.getElementById("Selections");
+const selections = document.createElement('h2');
+
 function computerPlay() {
     let choice = Math.floor(Math.random() * 3);
     if (choice === 0){ return 'rock';}
@@ -60,6 +63,8 @@ function game(computer, player){
     console.log('Computer: ' + computerScore + '\nPlayer: ' + playerScore);
     comScore.innerText = '0' + computerScore;
     userScore.innerText = '0' + playerScore;
+    selections.innerText = 'Player Selects: ' + playerSelection + '\n' + 'Computer Selects: ' + computerSelection;
+    selectionsDiv.appendChild(selections);
 
     let winner;
     if(computerScore > playerScore){winner = 'Computer wins the game';}
