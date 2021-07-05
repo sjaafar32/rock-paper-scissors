@@ -1,3 +1,7 @@
+:root{
+    --light-color: white;
+}
+
 @font-face {
     font-family: digital-clock;
     src: url(digital-7.ttf);
@@ -31,7 +35,7 @@ button {
     margin-left: auto;
     margin-right: auto;
     width: 600px;
-    height: 400px;
+    height: 470px;
     background-color: rgb(70, 66, 66);
 }
 
@@ -114,4 +118,24 @@ p {
     font-size: 20px;
     font-weight: bold;
     font-family: digital-clock;
+}
+
+.selections-panel {
+    display: flex;
+    margin: auto;
+}
+
+.lights {
+    width: 15px;
+    height: 15px;
+    background-color: var(--light-color);
+    border-radius: 20px;
+}
+
+.player-selections {
+    transform: translate(25%, 0%);
+}
+
+.comp-selections {
+    transform: translate(65%, -100%)
 }
